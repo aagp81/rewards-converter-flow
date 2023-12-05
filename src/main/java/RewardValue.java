@@ -28,16 +28,16 @@ public class RewardValue {
 
     // Getter method for miles value
     public double getMilesValue() {
-        return milesValue;
+        return milesValue / 0.0035;
     }
 
     // Convert cash to miles at a rate of 0.0035
     private double convertCashToMiles(double cashValue) {
-        return cashValue / 0.0035;
+        return cashValue * 0.0035;
     }
 
     // Convert miles to cash at a rate of 0.0035
     private double convertMilesToCash(double milesValue) {
-        return milesValue * 0.0035;
+        return milesValue / 0.0035;
     }
 }
